@@ -7,8 +7,7 @@
 - [picom](./configuration/picom/compton.config)
 - [xresouces](./configuration/.Xresources)
 - [additional xresources](./configuration/.extend.Xresources)
-- [qt5ct theme](./configuration/qt5ct/colors/arc-dark.conf) - select custom palet for any dark theme and use this
+- [qt5ct theme](./configuration/qt5ct/colors/arc-dark.conf) - select custom palette for any dark theme and use this
 - [gtk theme](https://github.com/horst3180/arc-theme)
 - [firefox theme](https://github.com/horst3180/arc-firefox-theme)
 - [rofi](./configuration/rofi/conf) - rofi colour theme is taken from xresources
-- 
