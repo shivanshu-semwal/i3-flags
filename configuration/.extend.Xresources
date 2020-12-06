@@ -1,0 +1,75 @@
+*background:            #282c34
+*foreground:            #d7dae0
+*fading:                15
+*fadeColor:             black
+*cursorColor:           #d7dae0
+*pointerColorBackground:#282c34
+*pointerColorForeground:#d7dae0
+
+! special
+*.foreground:   #d7dae0
+*.background:   #282c34
+*.cursorColor:  #d7dae0
+
+! black
+*.color0:       #3f4451
+*.color8:       #4f5666
+
+! red
+*.color1:       #e05561
+*.color9:       #ff616e
+
+! green
+*.color2:       #8cc265
+*.color10:      #a5e075
+
+! yellow
+*.color3:       #d18f52
+*.color11:      #f0a45d
+
+! blue
+*.color4:       #4aa5f0
+*.color12:      #4dc4ff
+
+! magenta
+*.color5:       #c162de
+*.color13:      #de73ff
+
+! cyan
+*.color6:       #42b3c2
+*.color14:      #4cd1e0
+
+! white
+*.color7:       #e6e6e6
+*.color15:      #d7dae0
+
+XTerm*background: #6aa7a5
+XTerm*foreground: #6aa7a5
+XTerm*reverseVideo: on
+!XTerm*faceName: Terminus:size=11:antialias=true
+!XTerm*faceName: InconsolataRegular:size=11:antialias=true
+XTerm*faceName: HackRegular:size=11:antialias=true
+XTerm*selectToClipboard: true
+
+! ROFI SETUP HERE !
+! Enable the extended coloring options
+rofi.color-enabled: true
+! background: #282c34
+! foreground: #d7dae0
+!                  bg       border   separator
+rofi.color-window: #282c34, #d7dae0, #d7dae0
+!                  bg       fg       bg-alt   hl-bg    hl-fg
+rofi.color-normal: #282c34, #d7dae0, #282c34, #2c313c, #d7dae0
+rofi.color-active: #282c34, #d7dae0, #282c34, #2c313c, #d7dae0
+rofi.color-urgent: #282c34, #d7dae0, #282c34, #2c313c, #d7dae0
+
+rofi.separator-style: solid
+rofi.sidebar-mode: false
+rofi.lines: 6 
+!rofi.font: Hack Regular 12
+rofi.font: monofur 15
+rofi.bw: 1
+rofi.columns: 1
+rofi.padding: 5
+rofi.fixed-num-lines: true
+rofi.hide-scrollbar: true
