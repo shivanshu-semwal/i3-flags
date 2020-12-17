@@ -1,0 +1,10 @@
+$mod+Return Gnome Terminal
+$mod+Shift+q Kill
+$mod+d Rofi
+$mod_next+Return Rofi2
+$mod_next+Tab Rofi3
+$mod+F3 Ranger
+$mod+t Kill Picom
+$mod+Ctrl+t Restart Picom
+$mod+Shift+d Kill Dunst
+$mod+Ctrl+x Xkill

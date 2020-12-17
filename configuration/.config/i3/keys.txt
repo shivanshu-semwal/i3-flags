@@ -1,0 +1,26 @@
+# bindsym [--release] [<Group>+][<Modifiers>+]<keysym> command #[--release]                             
+# kill focused window                   $mod+Shift+q                            
+# start file manager                    $mod+F3                                 
+# start the i3-scrot screenshot utility Print                                   
+#                                       $mod+Shift+h                            
+# change focus (i don't use vim keys) # $mod+j                                  
+# bindsym $mod+k focus down #           $mod+l                                  
+#                                       $mod+odiaeresis                         
+# alternatively, you can use the cursor keys:$mod+Left                               
+# move focused window #                 $mod+Shift+j                            
+# bindsym $mod+Shift+k move down #      $mod+Shift+l                            
+#                                       $mod+Shift+odiaeresis                   
+# alternatively, you can use the cursor keys:$mod+Shift+Left                         
+# toggle fullscreen mode for the focused container$mod+f                                  
+# toggle tiling / floating              $mod+Shift+space                        
+# toggle sticky                         $mod+Shift+s                            
+# move the currently focused window to the scratchpad$mod+Shift+minus                        
+#navigate workspaces next / previous    $mod+Ctrl+Right                         
+# switch to workspace                   $mod+1                                  
+# Move focused container to workspace   $mod+Ctrl+1                             
+# Move to workspace with focused container$mod+Shift+1                            
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)$mod+Shift+r                            
+# Resize window (you can also use the mouse for that)$mod+r                                  
+# Lock screen #                         $mod+Shift+L                            
+# hide/unhide i3status bar              $mod+m                                  
+# using xbacklight                      XF86MonBrightnessUp                     

@@ -1,0 +1,10 @@
+$-> Gnome Terminal
+$-> Kill
+$-> Rofi
+$-> Rofi2
+$-> Rofi3
+$-> Ranger
+$-> Kill Picom
+$-> Restart Picom
+$-> Kill Dunst
+$-> Xkill

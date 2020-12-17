@@ -1,0 +1,10 @@
+$mod+Return
+$mod+Shift+q
+$mod+d
+$mod_next+Return
+$mod_next+Tab
+$mod+F3
+$mod+t
+$mod+Ctrl+t
+$mod+Shift+d
+$mod+Ctrl+x

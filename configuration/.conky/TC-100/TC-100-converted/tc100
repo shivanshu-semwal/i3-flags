@@ -1,0 +1,99 @@
+conky.config = {
+---------------------------------#
+-- TC-100 Conky Theme------------#
+-- Hi-Teck Clean Conky Theme-----#
+-- by luizfnunes-----------------#
+-- http://github.com/luizfnunes -#
+-- ------------------------------#
+-- Configuration
+	alignment = 'top_right',
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_hints = 'undecorated,sticky,skip_taskbar,skip_pager,below',
+	own_window_colour = '#000000',
+	own_window_argb_visual = true,
+	own_window_argb_value = 0,
+	own_window_transparent = true,
+	minimum_width = 700, minimum_height = 700,
+	draw_graph_borders = false,
+	background = true,
+	text_buffer_size = 256,
+	draw_shades = false,
+	override_utf8_locale = true,
+	use_xft = true,
+	font = 'Raptor:size=10',
+	gap_x = 0,
+	gap_y = 0,
+	update_interval = 1,
+	default_color = '#FFFFFF',
+	uppercase = true,
+};
+--Widgets
+--CPU
+conky.text = [[
+#
+#Background
+#
+${image ~/.conky/TC-100/images/background-green.png -s 700x700 -p 0,0}
+${goto 335}${voffset 100}${cpugraph 30,200 -l}${alignr 134}${if_match $cpu >= 10}${offset 10}${else}${offset 4}${endif}${voffset -15}${cpu}%
+${goto 335}${voffset 10}CPU USAGE: ${cpubar 10,104}
+#
+#Information
+#
+${goto 60}${exec cat /etc/os-release | head -1 | cut -d '"' -f2}
+${goto 60}UPTIME: ${uptime}
+${goto 60}${kernel}
+#
+#Memory Graph
+#
+${alignr 85}${voffset -2}${memgraph 30,120}
+${alignr 85}MEMORY: ${membar 10, 50}
+${alignr 85}${mem}
+#
+#IO Disk Graphs
+#
+${goto 65}${voffset 8}${diskiograph_read 30,100 -l}${goto 175}${diskiograph_write 30,100 -l}
+${goto 65}${voffset 5}DISK READ${goto 175}DISK WRITE
+${goto 65}${diskio_read}${goto 175}${diskio_write}
+#
+#Processes and Threads Information
+#
+${voffset 52}${goto 175}PROCESSES
+${goto 175}${running_processes}
+${goto 175}THREADS
+${goto 175}${running_threads}
+#
+#Filesystem Usage
+#
+${voffset -183}
+${alignr 155}${fs_bar 10,140}
+${alignr 155}Filesystem ${fs_size /}
+${voffset -90}
+${goto 580}USED ${fs_used}
+${goto 580}${fs_bar 10,100}
+${voffset 0}
+${goto 580}FREE ${fs_free}
+${goto 580}${fs_bar_free 10,100}
+#
+# Network Graphs
+#
+${voffset 16}
+${goto 375}${upspeedgraph wlp0s20f3 30,100}
+${goto 375}UPLOAD ${upspeed wlp0s20f3}
+${voffset -85}
+${goto 495}${downspeedgraph wlp0s20f3 30,100}
+${goto 495}DOWNLOAD ${downspeed wlp0s20f3}
+#
+# Date and time
+#
+${voffset 20}
+${goto 200}${font Raptor:size=25}${time %I}:${time %M}${font}
+${voffset -55}
+${goto 383}${font Raptor:size=25}${time %a} ${time %b} ${time %e}${font}
+#
+#IP Information
+#
+#${voffset 35}
+#${goto 375}LOCAL IP: ${addr wlp0s20f3}
+#${voffset -15}${alignr 355}External IP: ${execi 60 curl  ipinfo.io/ip}
+]];
